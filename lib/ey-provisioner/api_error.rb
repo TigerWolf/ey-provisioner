@@ -10,7 +10,7 @@ module Ey
 
       def message
         if @status
-          "#{@status}: #{error_message}"
+          "#{@status}: #{error_message} : #{error.to_s}"
         else
           @error.message
         end
